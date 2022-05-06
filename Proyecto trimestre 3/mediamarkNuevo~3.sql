@@ -24,6 +24,8 @@ SELECT c.nombre, p.nombre
 SELECT c.nombre, p.clientes_id, p.importe, p.fecha, pr.nombre
     FROM clientes c, pedidos p, linea_pedido lp, productos pr
     WHERE p.clientes_id =c.id AND p.id = lp.productos_id AND lp.productos_id = pr.id;
+
+--A partir de aqui lo hice yo Salo
     
 SELECT p.nombre, c.nombre, sub.nombre
     FROM categorias c, productos p, subcategorias sub
